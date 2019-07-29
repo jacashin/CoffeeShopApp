@@ -1,0 +1,19 @@
+﻿@model List<CoffeeShop.Data.Product>
+@{
+    ViewBag.Title = "CoffeeList";
+}
+
+<h2>CoffeeList</h2>
+@{
+    <h3>Hello @ViewBag.Name your choices are as follows:</h3>
+}
+@foreach (var item in Model)
+{
+<div>
+    <ul>
+    @item.FlavorName
+    @item.Roast
+    @item.Size
+    </ul>
+</div>
+}

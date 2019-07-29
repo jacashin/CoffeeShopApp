@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome</h2>
+
+<input type="button" value="Register" onclick="@("window.location.href='" + @Url.Action("Register", "CoffeeShop") + "'");" />
+<input type="button" value="Login" onclick="@("window.location.href='" + @Url.Action("Login", "CoffeeShop") + "'");" />
